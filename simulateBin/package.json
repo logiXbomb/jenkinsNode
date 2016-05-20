@@ -1,0 +1,15 @@
+{
+  "name": "jenkins-node",
+  "version": "0.0.0",
+  "description": "sample project to run through jenkins",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "mocha"
+  },
+  "author": "Seth Lowie <seth.lowie@gmail.com> (https://github.com/logiXbomb)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
