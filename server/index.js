@@ -1,12 +1,12 @@
-var express = require('express');
+import express from 'express';
 
-var app = express();
-var PORT = process.env.PORT || 3000;
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-app.get('/', function (req, res) {
-  res.send('<h1>I am from the built server</h1>');
+app.get('/', (req, res) => {
+  res.send('<h1>I am from the babel built server</h1>');
 });
 
-app.listen(PORT, function () {
+app.listen(PORT, () => {
   console.log('we hear you');
 });
