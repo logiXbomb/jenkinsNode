@@ -4,7 +4,8 @@
   "description": "sample project to run through jenkins",
   "main": "index.js",
   "scripts": {
-    "build": "node ./node_modules/babel-cli/bin/babel server --out-dir bin/server ",
+    "build": "node ./node_modules/babel-cli/bin/babel server --out-dir bin/server",
+    "copy-files": "node ./build",
     "start": "node bin/server",
     "test": "mocha"
   },
@@ -14,6 +15,7 @@
     "express": "^4.13.4"
   },
   "devDependencies": {
-    "babel-cli": "^6.9.0"
+    "babel-cli": "^6.9.0",
+    "copyfiles": "^0.2.1"
   }
 }
