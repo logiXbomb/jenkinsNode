@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node ./node_modules/babel-cli/bin/babel server --out-dir bin/server",
-    "copy-files": "node ./build",
+    "clean-package": "node ./config/clean-package",
+    "copy-files": "node ./config/build",
     "start": "node ./server",
     "test": "mocha"
   },
