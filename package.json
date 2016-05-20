@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node ./node_modules/babel-cli/bin/babel server --out-dir bin/server",
     "copy-files": "node ./build",
-    "start": "node bin/server",
+    "start": "node ./server",
     "test": "mocha"
   },
   "author": "Seth Lowie <seth.lowie@gmail.com> (https://github.com/logiXbomb)",
