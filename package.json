@@ -4,12 +4,16 @@
   "description": "sample project to run through jenkins",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
+    "build": "node ./node_modules/babel-cli/bin/babel server --out-dir bin/server ",
+    "start": "node bin/server",
     "test": "mocha"
   },
   "author": "Seth Lowie <seth.lowie@gmail.com> (https://github.com/logiXbomb)",
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0"
   }
 }
